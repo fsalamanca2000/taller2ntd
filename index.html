@@ -3,40 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primer Articulo</title>
+    <title>Articulo</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <div class="introduccion">
-        <h1>Tema consultado: JavaScript</h1>
-        <h2>Resumen</h2>
-        <p>La optimización de la carga de páginas web mediante JavaScript es esencial para mejorar tanto el rendimiento del sitio como la experiencia del usuario. Una de las prácticas más importantes es la minificación y compresión de archivos JavaScript, lo cual consiste en reducir su tamaño eliminando espacios, comentarios y otros caracteres innecesarios, además de aplicar métodos de compresión como gzip o brotli. Esto facilita una descarga más rápida y eficiente de los recursos necesarios.</p>
-        <p>Es igualmente importante la carga asíncrona y diferida de scripts mediante las propiedades `async` y `defer` en las etiquetas `script`. Estas opciones permiten que los archivos JavaScript se carguen en paralelo con otros recursos, sin bloquear la renderización inicial de la página. Junto con esto, la carga diferida o “lazy loading” de recursos no esenciales, como imágenes y vídeos, pospone su descarga hasta que sean necesarios, lo que optimiza los tiempos de carga percibidos por los usuarios.</p>
-        <p>Otra técnica eficaz es la división del código o "code splitting", que consiste en fragmentar los archivos JavaScript en módulos más pequeños, cargando solo lo que es necesario para cada parte específica del sitio. Además, es crucial eliminar el JavaScript innecesario o “muerto” que no se utiliza en la página, para lo cual herramientas como Lighthouse o Webpack Bundle Analyzer pueden ser útiles. A esto se añade el uso de Service Workers, que permite almacenar recursos en caché para reducir la necesidad de volver a descargarlos con cada visita del usuario.</p>
-        <p>La preconexión y el prefetching también juegan un papel importante, permitiendo que el navegador establezca conexiones tempranas con servidores externos y cargue en segundo plano los recursos que se necesitarán próximamente. Optimizar los frameworks y librerías, utilizando versiones más ligeras o reemplazándolos con soluciones nativas, también puede contribuir significativamente a la mejora del rendimiento. Además, los Web Workers permiten ejecutar tareas intensivas en segundo plano, evitando que el hilo principal de la página se bloquee y manteniendo una interfaz de usuario fluida.</p>
-        <p>Por último, optimizar la ejecución de JavaScript mediante técnicas como “debounce” y “throttle” ayuda a reducir la frecuencia de ejecución de funciones que consumen muchos recursos, especialmente en respuesta a eventos como el desplazamiento o la redimensión de la ventana. Al implementar todas estas estrategias, se logra una experiencia de usuario más rápida y eficiente, maximizando el rendimiento del sitio web.</p>
-    </div> 
-    <div class="fichaTecnica">
-        <h1>Ficha Tecanica</h1>
-        <h1>Titulo: Accelerating page loads via streamlining JavaScript engine for distributed learning</h1>
-        <h3>Autores: Chen Liang, Guoyu Wang, Ning Li, Zuo Wang, Weihong Zeng, Fu-an Xiao, Yu-an Tan, Yuanzhang Li</h3>
-        <h2>Resumen del articulo</h2>
-        <p>Distributed learning based on JavaScript-based frontends is typically implemented at the endpoint to maximize performance. Yet, JavaScript-based frontends often experience suboptimal performance. To reconcile these disparities in performance between EDGE and endpoint deployments, strategic optimization is essential, particularly for preserving privacy in distributed learning. Real-time streaming optimizations are imperative to align the performance of disparate components for smooth integration. The reliance on JavaScript for various web functionalities can lead to increased resource consumption and slower page loads. Thus, we introduce a streamlined JavaScript engine designed to optimize structural patterns in JavaScript code, with three key enhancements. Firstly, we reduce the computational burden of the JavaScript engine necessary for setting up the browser's runtime environment. Secondly, we refine the parsing process for specific code patterns, boosting the efficiency of our lightweight engine. Thirdly, we streamline the Inter-Process Communication (IPC) to maintain high performance, even with limited memory resources. Our evaluations demonstrate that our approach reduces the median Total Computation Time (TCT) by 45.2%, and surpasses existing leading solutions, Siploader and Prepack, with improvements ranging from 1.13x to 1.39x.</p>
-        <h4>Palabras Claves</h4>
-        <ul>
-            <li>JavaScript engine</li>
-            <li>Optimization</li>
-            <li>Page loads</li>
-        </ul>
-        <h4>Año de publicacion</h4>
-        <p>09/Mayo/2024</p>
-        <h2>Ideas Principales</h2>
-        <ol>
-            <li>Optimización de la Computación en el Navegador: El artículo destaca que la computación del lado del cliente, especialmente en JavaScript, es una de las principales causas de la lentitud en la carga de páginas web. Se proponen métodos para reducir la latencia de la computación en el navegador, como la creación manual de páginas web optimizadas para móviles y el uso de servidores proxy para descargar tareas computacionales, aunque estos últimos enfrentan desafíos de escalabilidad y seguridad</li>
-            <li>Lazy Parsing y Eficiencia en la Carga de Páginas: Se introduce el concepto de "lazy parsing", que consiste en diferir el análisis y la compilación de código JavaScript no esencial hasta que sea necesario. Esto ayuda a optimizar el uso de recursos y a mejorar los tiempos de carga de las páginas al evitar la ejecución prematura de código que puede no ser utilizado</li>
-            <li>Estrategias de Optimización de Red: El artículo también menciona diversas estrategias para mejorar el rendimiento web, como el uso de características de HTTP/2 para enviar archivos de manera anticipada y la reorganización de solicitudes de red para minimizar los viajes de ida y vuelta. Estas estrategias complementan el enfoque propuesto en el artículo, que se centra en la optimización a nivel de función en la ejecución de JavaScript</li>
-        </ol>
-        <h2>Conclusion</h2>
-        <p>Este articulo permite conocer como se pueden optimizar procesos a la hora de desarrollar codigo lo cual es un complemento ideal para nuestro desarrollo profesional</p>
+    <div class="contenido">
+        <div class="introduccion">
+            <h1>Tema consultado: JavaScript</h1>
+            <h2>Resumen</h2>
+            <p>La optimización de la carga de páginas web mediante JavaScript es esencial para mejorar tanto el rendimiento del sitio como la experiencia del usuario. Una de las prácticas más importantes es la minificación y compresión de archivos JavaScript, lo cual consiste en reducir su tamaño eliminando espacios, comentarios y otros caracteres innecesarios, además de aplicar métodos de compresión como gzip o brotli. Esto facilita una descarga más rápida y eficiente de los recursos necesarios.</p>
+            <p>Es igualmente importante la carga asíncrona y diferida de scripts mediante las propiedades `async` y `defer` en las etiquetas `script`. Estas opciones permiten que los archivos JavaScript se carguen en paralelo con otros recursos, sin bloquear la renderización inicial de la página. Junto con esto, la carga diferida o “lazy loading” de recursos no esenciales, como imágenes y vídeos, pospone su descarga hasta que sean necesarios, lo que optimiza los tiempos de carga percibidos por los usuarios.</p>
+            <p>Otra técnica eficaz es la división del código o "code splitting", que consiste en fragmentar los archivos JavaScript en módulos más pequeños, cargando solo lo que es necesario para cada parte específica del sitio. Además, es crucial eliminar el JavaScript innecesario o “muerto” que no se utiliza en la página, para lo cual herramientas como Lighthouse o Webpack Bundle Analyzer pueden ser útiles. A esto se añade el uso de Service Workers, que permite almacenar recursos en caché para reducir la necesidad de volver a descargarlos con cada visita del usuario.</p>
+            <p>La preconexión y el prefetching también juegan un papel importante, permitiendo que el navegador establezca conexiones tempranas con servidores externos y cargue en segundo plano los recursos que se necesitarán próximamente. Optimizar los frameworks y librerías, utilizando versiones más ligeras o reemplazándolos con soluciones nativas, también puede contribuir significativamente a la mejora del rendimiento. Además, los Web Workers permiten ejecutar tareas intensivas en segundo plano, evitando que el hilo principal de la página se bloquee y manteniendo una interfaz de usuario fluida.</p>
+            <p>Por último, optimizar la ejecución de JavaScript mediante técnicas como “debounce” y “throttle” ayuda a reducir la frecuencia de ejecución de funciones que consumen muchos recursos, especialmente en respuesta a eventos como el desplazamiento o la redimensión de la ventana. Al implementar todas estas estrategias, se logra una experiencia de usuario más rápida y eficiente, maximizando el rendimiento del sitio web.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png" alt="JaveScriptLogo" width="500px">
+        </div> 
+        <div class="fichaTecnica">
+            <h1>Ficha Tecnica</h1>
+            <h2>Titulo: Accelerating page loads via streamlining JavaScript engine for distributed learning</h2>
+            <h3>Autores: Chen Liang, Guoyu Wang, Ning Li, Zuo Wang, Weihong Zeng, Fu-an Xiao, Yu-an Tan, Yuanzhang Li</h3>
+            <h2>Resumen del articulo</h2>
+            <p>Distributed learning based on JavaScript-based frontends is typically implemented at the endpoint to maximize performance. Yet, JavaScript-based frontends often experience suboptimal performance. To reconcile these disparities in performance between EDGE and endpoint deployments, strategic optimization is essential, particularly for preserving privacy in distributed learning. Real-time streaming optimizations are imperative to align the performance of disparate components for smooth integration. The reliance on JavaScript for various web functionalities can lead to increased resource consumption and slower page loads. Thus, we introduce a streamlined JavaScript engine designed to optimize structural patterns in JavaScript code, with three key enhancements. Firstly, we reduce the computational burden of the JavaScript engine necessary for setting up the browser's runtime environment. Secondly, we refine the parsing process for specific code patterns, boosting the efficiency of our lightweight engine. Thirdly, we streamline the Inter-Process Communication (IPC) to maintain high performance, even with limited memory resources. Our evaluations demonstrate that our approach reduces the median Total Computation Time (TCT) by 45.2%, and surpasses existing leading solutions, Siploader and Prepack, with improvements ranging from 1.13x to 1.39x.</p>
+            <h4>Palabras Claves</h4>
+            <ul>
+                <li>JavaScript engine</li>
+                <li>Optimization</li>
+                <li>Page loads</li>
+            </ul>
+            <h4>Año de publicacion</h4>
+            <p>09/Mayo/2024</p>
+            <h2>Ideas Principales</h2>
+            <ol>
+                <li>Optimización de la Computación en el Navegador: El artículo destaca que la computación del lado del cliente, especialmente en JavaScript, es una de las principales causas de la lentitud en la carga de páginas web. Se proponen métodos para reducir la latencia de la computación en el navegador, como la creación manual de páginas web optimizadas para móviles y el uso de servidores proxy para descargar tareas computacionales, aunque estos últimos enfrentan desafíos de escalabilidad y seguridad</li>
+                <li>Lazy Parsing y Eficiencia en la Carga de Páginas: Se introduce el concepto de "lazy parsing", que consiste en diferir el análisis y la compilación de código JavaScript no esencial hasta que sea necesario. Esto ayuda a optimizar el uso de recursos y a mejorar los tiempos de carga de las páginas al evitar la ejecución prematura de código que puede no ser utilizado</li>
+                <li>Estrategias de Optimización de Red: El artículo también menciona diversas estrategias para mejorar el rendimiento web, como el uso de características de HTTP/2 para enviar archivos de manera anticipada y la reorganización de solicitudes de red para minimizar los viajes de ida y vuelta. Estas estrategias complementan el enfoque propuesto en el artículo, que se centra en la optimización a nivel de función en la ejecución de JavaScript</li>
+            </ol>
+            <h2>Conclusion</h2>
+            <p>Este articulo permite conocer como se pueden optimizar procesos a la hora de desarrollar codigo lo cual es un complemento ideal para nuestro desarrollo profesional</p>
+        </div>
     </div>
+    <footer>
+        <h2>Hecho por Juan Felipe Salamanca González - 506222704</h2>
+    </footer>
+    <script src="/js/styles.js"></script>
 </body>
 </html>
